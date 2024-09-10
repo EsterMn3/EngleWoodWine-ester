@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <title>Engle Wood Wine Merchants</title>
+</head>
+<body> 
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar() ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li> <!--Hamburger button-->
+        <li><a href="#">Shop Wines</a></li>
+        <li><a href="#">Spirits</a></li>
+        <li><a href="#">Pantry</a></li>
+        <li><a href="#">Gifts</a></li>
+      </ul>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><img src="photos\menu.svg"></a></li>
+        <p class="longwebsitename"><a href="#">ENGLEWOOD WINE MERCHANTS</a></p>
+        <p class="shortwebsitename"><a href="#">EWM</a></p>
+        <div class="nav-listSearch">
+          <ul class="nav-listItems">
+            <li ><a href="#">Shop Wine</a></li>
+            <li ><a href="#">Spirits</a></li>
+            <li ><a href="#">Pantry</a></li>
+            <li ><a href="#">E-Gift Cards</a></li>
+          </ul>
+          <div clas="searchcontainer">
+            <label class="search-label" for="searchInput">
+                <input type="search" id="searchInput " name="search" placeholder="Search entire store here...">
+                <div class="searchicon" id="searchIcon"><a href="#" onclick="toggleSearch()"><img  src="photos/search-Regular.svg" alt="search logo"></a></div>
+              </label>
+          </div>
+        </div>
+
+      <ul class="nav-logos">
+          <li >
+            <a href="#location" id="locationlogo"><img src="photos/geo-alt.svg" alt="location logo"></a>
+          </li>
+          <li >
+            <a href="#"><img src="photos\person_logo.svg" alt="person logo"></a>
+          </li>
+          <li >
+            <a href="#phonenumber" id="telephonelogo"><img src="photos\telephone_logo.svg" alt="telephone logo"></a>
+          </li>
+          <li id="badgecontainer">
+            <a href="#"><img src="photos\bag_logo.svg" alt="bag logo"></a>
+            <div class="badge">0</div>
+          </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="bgphoto" >
+    <div class="content-overlay">
+        <p id="backgroundtext">Curated Selections</p>
+        <p id="descriptiontext">Join 10,000 clients nationwide  who enjoy reading about and receiving the finest selections from the wine world.</p>
+        <div class="buttonsContainer">
+          <button class="button" id="shopnowbutton">Shop Now</button>
+          <button class="button" id="joinusbutton">Join Us</button>
+      </div>
+    </div>
+  </div>
+
+    <section class="container-custom container-width">
+      <div id="item1" class="item">
+          <h2 class="frame15-title" >Merchant's Pick</h2>
+          <p class="frame15-description">Hand-selected features for both budding enthusiasts and avid collectors.</p>
+          <button class="frame15button" id="frame15buttonViellAll">View All</button>
+      </div>
+      <div id="item2" >
+        <a class="prev" onclick="plusSlides(-1)"><img src="photos\chevron-left.svg" class="arrow left image-button"></a>
+        <a class="next" onclick="plusSlides(1)"><img src="photos\we-right.svg" class="arrow right image-button"></a>
+
+        <ul class="mySlides">
+          <li class="slideElement"> 
+            <div class="el1">
+              <img src="photos\Rectangle 6.png" alt="first image in carousel">
+            </div>
+            <div class="el2">
+              <img class="circle_shadow" src="photos\OBJECTS.png" alt="circle shadow" >
+              <h2 class="el-header priority">2018 Poggiotondo, Brunello di Montalcino</h2>
+              <p class="el-description priority">Brunello at this price and Quality is your new house pour</p>
+              <img class="el-image" src="photos\logocrown.png" > 
+              <button class="el2-button priority">View more</button>
+            </div>
+          </li>
+          <li class="slideElement"> 
+            <div class="el1">
+              <img src="photos\photo3carousel.png" alt="first image in carousel">
+            </div>
+            <div class="el2">
+              <img class="circle_shadow" src="photos\OBJECTS.png" alt="circle shadow" >
+              <h2 class="el-header priority">2018 Poggiotondo, Brunello di Montalcino</h2>
+              <p class="el-description priority">Brunello at this price and Quality is your new house pour</p>
+              <img class="el-image" src="photos\logocrown.png" > 
+              <button class="el2-button priority">View more</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  <div class=" container-width group34">
+    <div class="group34rectange9">
+      <img class="imagegroup34"src="photos\Rectangle 11.svg">
+      <div class="group34Title">E-Gift Card</div>
+      <div class="group34Description">Barolo, Brunello, Burgundy, Bordeaux, and even Olive Oil - there are so many options and so many personal preferences. Let your recipient decide what he or she prefers with an Englewood Wine Merchants e-gift card.</div>
+      <button class="group34button">
+        <div class="group34buttonText">
+          Learn More 
+        </div>
+        <img class="group34arrowup" src="photos\arrow-up-right.svg" >
+
+      </button>
+      
+    </div>
+  
+    <div class="group34rectange10" >
+      <img class="imagegroup34" src="photos\Rectangle 12.svg">
+      <div class="group34Title">Corporate Concierge & Gifting</div>
+      <div class="group34Description">Sending several gifts? Our corporate gifting team is here to help. From Napa Valey to
+        the hills of Tuscany, we can customize your gifts whether you are sending to corporate clients, colleagues, friends, or loved ones.</div>
+        <button class="group34button">
+          <div class="group34buttonText" >
+            Learn More 
+          </div>
+          <img class="group34arrowup" src="photos\arrow-up-right.svg" >
+        </button>
+    </div>
+</div>
+
+<div class="container container-width" >
+  <div id="content1">
+      <div class="content1Title">Cellar Essentials</div>
+      <div class="content1Description" >Seasonal cellar essentials for everyday enjoyment.</div>
+      <button class="button content1Button" >Shop Now</button>
+    </div>
+  <div id="content2" >
+
+    <div class="image-container">
+      <img src="photos\Rectangle 31.svg" alt="2017 Robert Sinskey">
+      <div class="image-info">
+        <p class="image-info1">2017 Robert Sinskey, "Los Carneros" Pinot Noir, 375ml</p>
+        <div class="pricediv">
+          <span class="price">$28.95 </span>
+          <span class="old-price">$32.95</span>
+        </div>
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="photos\Rectangle 32.svg" alt="2021 Walter Hansel">
+      <div class="image-info" >
+        <p class="image-info2">2021 Walter Hansel "North Slope" Pinot Noir</p>
+        <div class="pricediv">
+          <span class="price">$28.95 </span>
+          <span class="old-price">$32.95</span>
+        </div>      
+      </div>
+    </div>
+    <div class="image-container">
+      <img src="photos\Rectangle 33.svg" alt="2020 Occidental">
+      <div class="image-info">
+        <p class="image-info3">2020 Occidental, "Freestone-Occidental" Pinot Noir, Sonoma</p>
+        <div class="pricediv">
+          <span class="price">$28.95 </span>
+          <span class="old-price">$32.95</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container container-width" >
+  <div id="content1"  > 
+    <div class="content1text" >
+      <div class="container2Title2" >Follow Us</div>
+      <div class="container2Description2">Follow us on Instagram to be more connected with us.</div>
+      <button class="button container2Button2" >Follow us</button>
+    </div>
+  </div>
+
+  <div class="eappsphotos">
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  <div class="elfsight-app-2595e472-5ff1-4ea3-a7d0-53b1b4807b59" data-elfsight-app-lazy></div>
+  </div>
+</div>
+
+  <ul class="frame10 container-width">
+  <li class="frame10Elements"> 
+    <div class="frame10-El1">
+      <img src="photos\map.svg" alt="mapsbackgroundphoto">
+        <p class="location-info-p1">OUR LOCATION</p>
+        <p class="location-info-p2">One Engle Street, Englewood, NJ 07631</p>
+    </div>
+    <div class="frame10-El2">
+      <iframe id="location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24128.31797590916!2d-73.972659!3d40.892943!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f118e4e01bc7%3A0x6c9e0ff6dcdd7a60!2sEnglewood%20Wine%20Merchants!5e0!3m2!1sen!2sus!4v1714049637554!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </li>
+</ul>
+
+<div class="footer " >
+  <div class="footer-container" >
+    <div class="footer-container1">
+      <div class="footer-column" >
+        <ul>
+          <li class="hideOnMobile"style="padding-bottom:13px ;height: 26px;font-family: Cormorant;font-size: 21.27px;font-weight: 400;line-height: 25.76px;text-align: left;">ENGLEWOOD WINE MERCHANTS</li>
+          <li><h1 class="hideOnMobile footerHeading" >Lorem Ipsum</h1> </li>
+          <li class="showOnMobile footerHeading" >Lorem Ipsum </li>
+
+          <li class="footerDescription" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</li>
+          <li class="footerEmail">Email*</li>
+            <input type="email" >
+          <div><button class="footerSignUpButton" >
+            <div class="buttonContent">Sign Up</div></button>
+          </div>
+          <ul class="socialDesktop">
+            <li class="hideOnMobile" ><a href="https://www.facebook.com/EnglewoodWineMerchants/"><img src="photos\facebook.png"></a></li>
+            <li class="hideOnMobile"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FMerchantsofWine"><img src="photos\twitter.png"></a></li>
+            <li class="hideOnMobile"><a href="https://www.instagram.com/englewoodwinemerchants/"><img src="photos\insta.png"></a></li>
+            <li class="hideOnMobile"><a href="https://www.pinterest.com/EnglewoodWine/"><img src="photos\pinterest.png"></a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-container2"  >
+      <div class="footer-column column1" >
+        <p class="footer-column-header toggle-btn" >Customer Service</p>
+        <ul class="toggle-content" >
+          <li class="footer-column-ulheader" style="  padding-top: 0px;">STORE LOCATION</li>
+          <li>One Engle Street, Englewood, NJ 07631</li>
+          <li id="phonenumber"class="footer-column-ulheader">PHONE</li>
+          <li>877-568-8820/201-568-8820</li>
+          <li class="footer-column-ulheader">EMAIL</li>
+          <li>info@englewoodwinemerchants.com</li>
+          <li class="footer-column-ulheader">STORE HOURS</li>
+          <li>Monday - Friday: 10:00 a.m. - 7:00 p.m.</li>
+          <li>Saturday: 11:00 a.m. - 7:00 p.m.</li>
+          <li>Sunday: 12:00 p.m. - 6:00 p.m. (Oct - Dec)</li>
+        </ul>
+      </div>
+      <div class="footer-column column2" >
+        <p class="footer-column-header  toggle-btn"  >Information</p>
+        <ul class="toggle-content" >
+          <li>Track My Order</li>
+          <li>Shipping Terms</li>
+          <li>Local Delivery</li>
+          <li>In Store Pickup</li>
+          <li>FAQ</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-column column3" >
+        <p class="footer-column-header  toggle-btn " >More </p>
+        <ul class="toggle-content" >
+          <li>My Account</li>
+          <li>Login</li>
+          <li>My Cart</li>
+          <li>My Wishtlist</li>
+          <li>Blog</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+  </div>
+</div>
+</div>
+
+<div >
+  <ul class="socials" >
+    <li class="showOnMobile" ><a href="https://www.facebook.com/EnglewoodWineMerchants/"><img src="photos\facebook.png"></a></li>
+    <li class="showOnMobile"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FMerchantsofWine"><img src="photos\twitter.png"></a></li>
+    <li class="showOnMobile"><a href="https://www.instagram.com/englewoodwinemerchants/"><img src="photos\insta.png"></a></li>
+    <li class="showOnMobile"><a href="https://www.pinterest.com/EnglewoodWine/"><img src="photos\pinterest.png"></a></li>
+</ul>
+</div>
+
+<footer class="footer-info" >
+  <p>Copyright © 2022 Englewood Wine Merchants. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
